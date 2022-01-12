@@ -186,10 +186,11 @@ header {
    cursor: pointer;
 }
 
-/* ===>>> Player & Blog Section Styles Here <<<=== */
+/* ===>>> Player, Blog & Course Section Styles Here <<<=== */
 
 #player .container,
-#blog .container {
+#blog .container,
+#course .container {
    display: flex;
    flex-direction: column;
    gap: 4rem;
@@ -197,6 +198,11 @@ header {
    border-radius: 2.5rem;
    padding: 3rem;
    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.033);
+}
+
+#blog,
+#course {
+   padding-top: 0;
 }
 
 /* ===>>> Player Section Styles Here <<<=== */
@@ -231,10 +237,6 @@ header {
 }
 
 /* ===>>> Blog Section Styles Here <<<=== */
-
-#blog {
-   padding-top: 0;
-}
 
 #blog .blogs {
    display: grid;
@@ -278,4 +280,104 @@ header {
 #blog .blog .textArea a {
    color: rgb(121, 0, 255);
    font-weight: 550;
+}
+
+/* ===>>> Course Section Styles Here <<<=== */
+
+#course .courses {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+#course .course {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   box-shadow: 0 0 1.25rem rgba(121, 0, 255, 0.08);
+   padding: 2rem;
+   border-radius: 2rem;
+}
+
+#course .course:hover {
+   cursor: pointer;
+   box-shadow: 0 0.25rem 1.25rem rgba(121, 0, 255, 0.15);
+}
+
+#course .course img {
+   height: 16rem;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 2rem;
+}
+
+#course .course .textArea {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1.5rem;
+}
+
+#course .course .textArea h2 {
+   font-size: 2rem;
+   font-weight: 550;
+}
+
+#course .course .textArea a {
+   font-weight: 550;
+   color: rgb(121, 0, 255);
+   text-transform: capitalize;
+}
+
+#course .course .textArea .ratings {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   width: 100%;
+}
+
+#course .course .textArea .ratings .stars {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   white-space: nowrap;
+}
+
+#course .course .textArea .ratings .stars * {
+   font-size: 1.5rem;
+   color: orange;
+}
+
+#course .course .textArea .ratings .stars svg.null * {
+   color: rgba(0, 0, 0, 0.25);
+}
+
+#course .course .textArea .ratings .stars p {
+   margin-left: 0.75rem;
+   font-weight: 550;
+   color: rgb(121, 0, 255);
+}
+
+#course .course .textArea .ratings .times {
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+   gap: 0.75rem;
+   border-radius: 5rem;
+   background-color: rgba(240, 0, 0, 0.1);
+   padding: 0.2rem 1rem;
+}
+
+#course .course:nth-child(2n) .textArea .ratings .times {
+   background-color: rgba(121, 0, 255, 0.1);
+}
+
+#course .course .textArea .ratings .times * {
+   color: rgba(240, 0, 0, 1);
+   font-size: 1.4rem;
+}
+
+#course .course:nth-child(2n) .textArea .ratings .times * {
+   color: rgba(121, 0, 255, 1);
 }
