@@ -381,3 +381,28 @@ header {
 #course .course:nth-child(2n) .textArea .ratings .times * {
    color: rgba(121, 0, 255, 1);
 }
+
+/* ===>>> Footer Section Styles Here <<<=== */
+
+#footer {
+   padding: 2rem;
+   background-color: white;
+}
+
+#footer p {
+   text-align: center;
+   text-transform: capitalize;
+}
+
+#footer a {
+   color: rgba(121, 0, 255, 1);
+   background-color: rgba(121, 0, 255, 0.1);
+   padding: 0.25rem 0.6rem 0.4rem;
+   border-radius: 0.5rem;
+   font-weight: 550;
+}
+
+#footer a:hover {
+   color: white;
+   background-color: rgba(121, 0, 255, 1);
+}
