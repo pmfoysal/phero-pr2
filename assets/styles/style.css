@@ -110,8 +110,7 @@ button:hover {
    opacity: 0.9;
 }
 
-img,
-a {
+img {
    user-select: none;
 }
 
@@ -128,7 +127,7 @@ header {
 }
 
 .container {
-   max-width: 100rem;
+   max-width: 110rem;
    margin: 0 auto;
 }
 
@@ -217,6 +216,14 @@ header {
    display: flex;
    align-items: center;
    gap: 2rem;
+   border-radius: 2rem;
+   padding: 1.5rem;
+   box-shadow: 0 0 1.25rem rgba(121, 0, 255, 0.08);
+}
+
+#player .player:hover {
+   cursor: pointer;
+   box-shadow: 0 0.25rem 1.25rem rgba(121, 0, 255, 0.15);
 }
 
 #player .player img {
@@ -232,22 +239,26 @@ header {
    text-transform: capitalize;
 }
 
-#player .player a:hover {
-   color: rgb(121, 0, 255);
-}
-
 /* ===>>> Blog Section Styles Here <<<=== */
 
 #blog .blogs {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 3.5rem;
+   gap: 3rem;
 }
 
 #blog .blog {
    display: flex;
    align-items: center;
    gap: 2rem;
+   box-shadow: 0 0 1.25rem rgba(121, 0, 255, 0.08);
+   padding: 2rem;
+   border-radius: 2rem;
+}
+
+#blog .blog:hover {
+   cursor: pointer;
+   box-shadow: 0 0.25rem 1.25rem rgba(121, 0, 255, 0.15);
 }
 
 #blog .blog img {
@@ -266,10 +277,6 @@ header {
    font-size: 2rem;
    font-weight: 550;
    cursor: pointer;
-}
-
-#blog .blog .textArea h2:hover {
-   color: rgb(121, 0, 255);
 }
 
 #blog .blog .textArea p {
