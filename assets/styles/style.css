@@ -10,7 +10,7 @@ html {
 }
 
 body {
-   background-color: #fffafa;
+   background-color: #ededff;
 }
 
 ::selection {
@@ -114,7 +114,7 @@ button:hover {
 
 section {
    overflow: hidden;
-   padding: 10rem 1.5rem;
+   padding: 5rem 1.5rem;
 }
 
 header {
@@ -125,6 +125,11 @@ header {
 .container {
    max-width: 100rem;
    margin: 0 auto;
+}
+
+.sectionTitle {
+   color: rgb(121, 0, 255);
+   font-size: 3.5rem;
 }
 
 /* ===>>> Header Section Styles Here <<<=== */
@@ -160,7 +165,7 @@ header {
 #header .menuArea {
    display: flex;
    align-items: center;
-   gap: 2rem;
+   gap: 3rem;
 }
 
 #header .menuArea a {
@@ -174,4 +179,45 @@ header {
    height: 4.5rem;
    width: auto;
    cursor: pointer;
+}
+
+/* ===>>> Player Section Styles Here <<<=== */
+
+#player .container {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   background-color: white;
+   border-radius: 2.5rem;
+   padding: 3rem;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.033);
+}
+
+#player .players {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+#player .player {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+#player .player img {
+   height: 7rem;
+   width: auto;
+}
+
+#player .player a {
+   white-space: nowrap;
+   font-size: 2rem;
+   font-weight: 550;
+   color: black;
+   text-transform: capitalize;
+}
+
+#player .player a:hover {
+   color: rgb(121, 0, 255);
 }
