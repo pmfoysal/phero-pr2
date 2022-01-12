@@ -110,6 +110,11 @@ button:hover {
    opacity: 0.9;
 }
 
+img,
+a {
+   user-select: none;
+}
+
 /* ===>>> Common Styles Here <<<=== */
 
 section {
@@ -181,9 +186,10 @@ header {
    cursor: pointer;
 }
 
-/* ===>>> Player Section Styles Here <<<=== */
+/* ===>>> Player & Blog Section Styles Here <<<=== */
 
-#player .container {
+#player .container,
+#blog .container {
    display: flex;
    flex-direction: column;
    gap: 4rem;
@@ -192,6 +198,8 @@ header {
    padding: 3rem;
    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.033);
 }
+
+/* ===>>> Player Section Styles Here <<<=== */
 
 #player .players {
    display: grid;
@@ -220,4 +228,54 @@ header {
 
 #player .player a:hover {
    color: rgb(121, 0, 255);
+}
+
+/* ===>>> Blog Section Styles Here <<<=== */
+
+#blog {
+   padding-top: 0;
+}
+
+#blog .blogs {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 3.5rem;
+}
+
+#blog .blog {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+#blog .blog img {
+   height: 12.5rem;
+   width: auto;
+   border-radius: 1.25rem;
+}
+
+#blog .blog .textArea {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+}
+
+#blog .blog .textArea h2 {
+   font-size: 2rem;
+   font-weight: 550;
+   cursor: pointer;
+}
+
+#blog .blog .textArea h2:hover {
+   color: rgb(121, 0, 255);
+}
+
+#blog .blog .textArea p {
+   white-space: nowrap;
+   text-transform: capitalize;
+}
+
+#blog .blog .textArea a {
+   color: rgb(121, 0, 255);
+   font-weight: 550;
 }
